@@ -1,0 +1,75 @@
+[
+  {
+    "trigger" : {
+      "command" : {
+        "action" : "go",
+        "object" : "north"
+      },
+      "condition" : {
+        "inventoryContains" : "key"
+      },
+      "print" : "You don't have the key to open the door"
+    },
+    "items" : [
+      {
+        "name" : "key",
+        "description" : "This is a rusty key"
+      }
+    ],
+    "name" : "Entrace",
+    "description" : "There's a closed door to the north. The doors are plated with gold and silver. There is a key on the ground.",
+    "adjacentRooms" : {
+      "north" : "Throne Room"
+    }
+  },
+  {
+    "trigger" : null,
+    "items" : [
+      {
+        "name" : "ruby",
+        "description" : "This is a precious stone"
+      }
+    ],
+    "name" : "Throne Room",
+    "description" : "You've entered the throne room. It is completely empty. There's the entrance to the south and a dining room to the east. You start to feel a little hungry.",
+    "adjacentRooms" : {
+      "east" : "Dining Room",
+      "south" : "Entrance"
+    }
+  },
+  {
+    "trigger" : {
+      "command" : {
+        "action" : "go",
+        "object" : "north"
+      },
+      "condition" : {
+        "inventoryContains" : "pantry key"
+      },
+      "print" : "You don't have the key to the pantry. D'oh!"
+    },
+    "items" : [
+
+    ],
+    "name" : "Dining Room",
+    "description" : "You are in the dining room. All the food seems to be in the pantry. The throne room lies to the west. The pantry is to the north. ",
+    "adjacentRooms" : {
+      "north" : "Pantry",
+      "west" : "Throne Room"
+    }
+  },
+  {
+    "trigger" : null,
+    "items" : [
+      {
+        "name" : "burrito",
+        "description" : "Tasty looking burrito."
+      }
+    ],
+    "name" : "Pantry",
+    "description" : "You have reached the pantry. There is a burrito on the table. You've won the game. ",
+    "adjacentRooms" : {
+      "south" : "Dining room"
+    }
+  }
+]

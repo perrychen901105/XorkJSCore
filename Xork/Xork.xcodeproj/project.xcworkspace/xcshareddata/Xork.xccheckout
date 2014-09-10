@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>3FBE3000-9650-43DC-A5FE-962703C99585</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Xork</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>03FDCE9E-336B-412B-BF91-7D293AF49ACE</key>
+		<string>https://github.com/perrychen901105/XorkJSCore</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Xork/Xork.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>03FDCE9E-336B-412B-BF91-7D293AF49ACE</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/perrychen901105/XorkJSCore</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>03FDCE9E-336B-412B-BF91-7D293AF49ACE</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>03FDCE9E-336B-412B-BF91-7D293AF49ACE</string>
+			<key>IDESourceControlWCCName</key>
+			<string>XorkJSCore</string>
+		</dict>
+	</array>
+</dict>
+</plist>

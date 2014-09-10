@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2CD5965519C084DE00FB6F84 /* hello.js in Resources */ = {isa = PBXBuildFile; fileRef = 2CD5965319C080A100FB6F84 /* hello.js */; };
 		FEB7B24717BE6212004A5DF0 /* xork.js in Resources */ = {isa = PBXBuildFile; fileRef = FEB7B24517BE6203004A5DF0 /* xork.js */; };
 		FEDFD80517AED8F900E052A1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEDFD80417AED8F900E052A1 /* Foundation.framework */; };
 		FEDFD80717AED8F900E052A1 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEDFD80617AED8F900E052A1 /* CoreGraphics.framework */; };
@@ -38,6 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2CD5965319C080A100FB6F84 /* hello.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = hello.js; sourceTree = "<group>"; };
 		FEB7B24517BE6203004A5DF0 /* xork.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = xork.js; sourceTree = "<group>"; };
 		FEDFD80117AED8F900E052A1 /* Xork.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Xork.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FEDFD80417AED8F900E052A1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -131,6 +133,7 @@
 				FEDFD83F17AEEDFF00E052A1 /* ConsoleTextView.h */,
 				FEDFD84017AEEDFF00E052A1 /* ConsoleTextView.m */,
 				FEDFD81C17AED8F900E052A1 /* Images.xcassets */,
+				2CD5965319C080A100FB6F84 /* hello.js */,
 				FEB7B24517BE6203004A5DF0 /* xork.js */,
 				FEDFD84217AF5E2700E052A1 /* data.json */,
 				FEDFD80B17AED8F900E052A1 /* Supporting Files */,
@@ -243,6 +246,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2CD5965519C084DE00FB6F84 /* hello.js in Resources */,
 				FEDFD81D17AED8F900E052A1 /* Images.xcassets in Resources */,
 				FEDFD80F17AED8F900E052A1 /* InfoPlist.strings in Resources */,
 				FEB7B24717BE6212004A5DF0 /* xork.js in Resources */,

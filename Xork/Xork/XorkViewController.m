@@ -8,12 +8,15 @@
 
 #import "XorkViewController.h"
 #import "ConsoleTextView.h"
+#import <JavaScriptCore/JavaScriptCore.h>
 
 @interface XorkViewController () <UITextFieldDelegate>
 
 @property (strong, nonatomic) IBOutlet ConsoleTextView *outputTextView;
 @property (strong, nonatomic) IBOutlet UITextField *inputTextField;
 @property (strong, nonatomic) IBOutlet UINavigationBar *navigationBar;
+
+@property (strong, nonatomic) JSContext *context;
 
 @end
 
@@ -33,7 +36,30 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    // 1
+    NSString *scriptPath = [[NSBundle mainBundle] pathForResource:@"hello" ofType:@"js"];
+    NSString *scriptString = [NSString stringWithContentsOfFile:scriptPath encoding:NSUTF8StringEncoding error:nil];
     
+    // 2
+    self.context = [[JSContext alloc] init];
+    [self.context evaluateScript:scriptString];
+    
+    // 3
+    /*
+     *  define the JavaScript function print() inside the JSContext.
+     */
+    __weak XorkViewController *weakSelf = self;
+    self.context[@"print"] = ^(NSString *text) {
+        text = [NSString stringWithFormat:@"%@\n",text];
+        [weakSelf.outputTextView setText:text concatenate:YES];
+    };
+    
+    // 4
+    /*
+     *  get a reference to the startGame function defined in hello.js, and then call it with an empty argument array since it doesnot take any arguments.
+     */
+    JSValue *function = self.context[@"startGame"];
+    [function callWithArguments:@[]];
 }
 
 - (void)didReceiveMemoryWarning {

@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		2CD5965519C084DE00FB6F84 /* hello.js in Resources */ = {isa = PBXBuildFile; fileRef = 2CD5965319C080A100FB6F84 /* hello.js */; };
+		C2D2C45919C1817400824FCD /* Item.m in Sources */ = {isa = PBXBuildFile; fileRef = C2D2C45819C1817400824FCD /* Item.m */; };
+		C2D2C45C19C199A200824FCD /* XorkAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = C2D2C45B19C199A200824FCD /* XorkAlertView.m */; };
 		FEB7B24717BE6212004A5DF0 /* xork.js in Resources */ = {isa = PBXBuildFile; fileRef = FEB7B24517BE6203004A5DF0 /* xork.js */; };
 		FEDFD80517AED8F900E052A1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEDFD80417AED8F900E052A1 /* Foundation.framework */; };
 		FEDFD80717AED8F900E052A1 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEDFD80617AED8F900E052A1 /* CoreGraphics.framework */; };
@@ -40,6 +42,10 @@
 
 /* Begin PBXFileReference section */
 		2CD5965319C080A100FB6F84 /* hello.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = hello.js; sourceTree = "<group>"; };
+		C2D2C45719C1817400824FCD /* Item.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Item.h; sourceTree = "<group>"; };
+		C2D2C45819C1817400824FCD /* Item.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Item.m; sourceTree = "<group>"; };
+		C2D2C45A19C199A200824FCD /* XorkAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XorkAlertView.h; sourceTree = "<group>"; };
+		C2D2C45B19C199A200824FCD /* XorkAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XorkAlertView.m; sourceTree = "<group>"; };
 		FEB7B24517BE6203004A5DF0 /* xork.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = xork.js; sourceTree = "<group>"; };
 		FEDFD80117AED8F900E052A1 /* Xork.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Xork.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FEDFD80417AED8F900E052A1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -127,11 +133,15 @@
 			children = (
 				FEDFD81317AED8F900E052A1 /* AppDelegate.h */,
 				FEDFD81417AED8F900E052A1 /* AppDelegate.m */,
+				C2D2C45719C1817400824FCD /* Item.h */,
+				C2D2C45819C1817400824FCD /* Item.m */,
 				FEDFD81617AED8F900E052A1 /* Main.storyboard */,
 				FEDFD81917AED8F900E052A1 /* XorkViewController.h */,
 				FEDFD81A17AED8F900E052A1 /* XorkViewController.m */,
 				FEDFD83F17AEEDFF00E052A1 /* ConsoleTextView.h */,
 				FEDFD84017AEEDFF00E052A1 /* ConsoleTextView.m */,
+				C2D2C45A19C199A200824FCD /* XorkAlertView.h */,
+				C2D2C45B19C199A200824FCD /* XorkAlertView.m */,
 				FEDFD81C17AED8F900E052A1 /* Images.xcassets */,
 				2CD5965319C080A100FB6F84 /* hello.js */,
 				FEB7B24517BE6203004A5DF0 /* xork.js */,
@@ -270,8 +280,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C2D2C45919C1817400824FCD /* Item.m in Sources */,
 				FEDFD81B17AED8F900E052A1 /* XorkViewController.m in Sources */,
 				FEDFD81517AED8F900E052A1 /* AppDelegate.m in Sources */,
+				C2D2C45C19C199A200824FCD /* XorkAlertView.m in Sources */,
 				FEDFD81117AED8F900E052A1 /* main.m in Sources */,
 				FEDFD84117AEEDFF00E052A1 /* ConsoleTextView.m in Sources */,
 			);

@@ -177,6 +177,9 @@ function processAction(action) {
     else if (action == "hint") {
         print(getCurrentRoom().description);
     }
+    else if (action == "version") {
+        print(getVersion());
+    }
     else {
         print("You can't do that.");
     }
@@ -200,7 +203,15 @@ function processCommand(action, object) {
     if (action == "go") {
         go(object);
     }
+    
+    else if (action == "take") {
+        take(object);
+    }
 
+    else if (action == "eat") {
+        eat(object);
+    }
+    
     else {
         print("You can't do that.");
     }
@@ -247,6 +258,41 @@ function go(direction) {
         print("Can't go there!");
     }
 
+}
+
+function eat(itemName) {
+    if (itemName == "burrito") {
+        showImgFind('me-gusta.jpg');
+    }
+}
+
+function take(itemName) {
+    // 1
+    var room = getCurrentRoom();
+    
+    // 2
+    if (room.hasItem(itemName)) {
+        item = room.itemForName(itemName);
+        inventory.addItem(item);
+        room.removeItem(item);
+        print("You picked it up. Woot!");
+    }
+    // 3
+    else {
+        print("You can't pick that up.");
+    }
+}
+
+function saveGame() {
+    presentNativeAlert("Hello","Do you want to save the game?",saveGameConfirm,saveGameCancel);
+}
+
+function saveGameConfirm() {
+    print('Yes');
+}
+
+function saveGameCancel() {
+    print('No');
 }
 
 /* Helper functions */
